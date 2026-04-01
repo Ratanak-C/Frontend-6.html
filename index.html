@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My static website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+
+            th {
+                background-color: grey;
+            }
+
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1><u>Welcome to my Static website</u></h1>
+    <p>Hello everyone</p>
+    <p>My name is <b>Ratanak</b> and I'm <i>14</i> years of age</p>
+    <hr>
+    <img src="d:\Screenshots\ronaldo.jpg" width="200" height="150">
+    <p>Click here to view me<a href="d:\Screenshots\ronaldo.jpg">
+            My photo</a></p>
+    <h2 style="color:red"><u> <i class="fa-solid fa-user"></i>About me</u></h2>
+    <!-- html inline does not go on a different line -->
+    <!-- html block creates or puts the context on the next line -->
+    <p>
+    <pre><big><b>Name:</b> Ratanak
+<b>Age:</b> 14 years old
+<b>Address:</b>  Phnom Penh
+<b>Number:</b> 013 692 943
+        </big>  </pre>
+    </p>
+    <hr>
+
+    <h2 style="color:red"><u><i class="fa-solid fa-flag"></i>Experience</u></h2>
+    <!-- List: <li> -->
+    <!-- Order list:<ol> -->
+    <!-- Unorder list: <ul> -->
+
+    <ul>
+        <li> HTML</li>
+        <li> CSS</li>
+        <li> JS</li>
+
+    </ul>
+
+    <h2 style="color:red"><i class="fa-solid fa-bag-shopping"></i><u>What I can do</u></h2>
+    <pre>
+<ol>
+    <li>----</li>
+    <li>----</li>
+    <li>----</li>
+   
+</ol>
+    </pre>
+    <hr>
+    <h2 style="color: red;"><i class="fa-solid fa-user-group"></i><u>My friends</u></h2>
+    <table width="300px">
+        <!-- <tr> is the row
+        <th> is the table head (can only use once)
+        <td> is the table body -->
+        <!-- Table style: Cell padding: The spacing between the border and the content -->
+        <tr style="color:white">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td>Kittikun</td>
+            <td style="text-align: center;">15</td>
+            <td>Phnom Penh</td>
+        </tr>
+        <tr>
+            <!-- Text-align: Left,Center,Right -->
+            <td style="text-align:center">2</td>
+            <td>Mongkul</td>
+            <td style="text-align: center;">12</td>
+            <td>Phnom Penh</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="4">Hello friends</td>
+        </tr>
+        <tr style="text-align: center;" ; rowspan="2">
+            <td>3</td>
+        </tr>
+        <tr>
+
+        </tr>
+
+    </table>
+    <!-- 
+    rowpan is to merge rows(rowspan="(Value of rows)") -->
+    <!-- colspan is to merge columns(colspan="(Value of columns)" -->
+    <h2 style="color:red"><i class="fa-solid fa-registered"></i><u>Register</u></h2>
+    <!-- For forms:<form>
+    Then <label>
+        For their information use <input> -->
+    <form>
+        <fieldset>
+            <legend>Register</legend>
+        <div> <label for="">Name</label>
+            <br>
+            <input type="text" placeholder="Input your name">
+        </div>
+<br>
+        <div> <Label>Email</Label>
+            <br>
+            <input type="email" placeholder="Input your email">
+        </div>
+<br>
+        <div> <label for="">Number</label>
+            <br>
+            <input type="number" placeholder="Input your phone number">
+        </div>
+<br>
+        <div> <label for="">Gender</label><br>
+            <input type="radio" name="a">Male<br>
+            <input type="radio" name="a"> Female
+        </div>
+<br>
+        <div><Label>Course</Label><br>
+            <input type="radio">Web Frontend <br>
+            <input type="radio">Web Backend <br>
+            <input type="radio">3d Rendering <br>
+        </div>
+<br>
+        <label for="">Address</label><br>
+        <select>
+            <option>Phnom Penh</option>
+            <option>Siem Reap</option>
+            <option>Preah Sihanouk ville</option>
+
+        </select>
+        <br>
+        <br>
+        
+
+        <label for="">Other</label><br>
+        <textarea cols="30" rows="10" placeholder="Input your message..."></textarea>
+        <br>
+        <input type="submit" placeholder="Submit">
+    </fieldset></form>
+
+
+
+</body>
+
+</html>
